@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    opacity: 0.70;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 5vh 90vh 5vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-left .nav-link {
+    margin-left: 10px;
+}
+
+.navbar .nav-right .nav-link {
+    margin-right: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.main-group {
+    grid-row-start: 2;
+    grid-column: 2 / 4;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+}
+
+.form input {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 25px;
+    border: 1px solid darkgrey;
+    height: 40px;
+}
+
+button {
+    background-color: rgba(240, 240, 240, 1);
+}
+
+#search-button {
+    margin-left: 30%;
+}
+
+#lucky {
+    margin-left: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.footer a {
+    font-size: 14px;
+    opacity: 0.55;
+}
+
+.footer .footer-left a {
+    margin-left: 15px;
+}
+
+.footer .footer-right a {
+    margin-right: 15px;
+}
